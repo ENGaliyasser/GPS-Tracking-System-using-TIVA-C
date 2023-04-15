@@ -6,7 +6,7 @@ Members Contributions: </br>
 Ali Yasser Ali 2000311 </br>
 Kareem Khaled Abdelazim Mohamed 2001091 </br>
 Ahmed Hossam eldin Mohamed Ahmed Mobark 2000075 </br>
-Ahmed Hesham Mohamed Arafa 2000079 </br>
+Ahmed Hesham Mahmoud Arafa 2000079 </br>
 Waleed Mohamed Abdellateef Abdellateef 2001212 </br>
 Zainab Galal Abdelmaksoud Mohamed 2000467 </br>
 Donia Hany Saeed Mohamed 2000400 </br>
