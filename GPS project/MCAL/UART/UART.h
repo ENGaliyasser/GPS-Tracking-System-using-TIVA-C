@@ -3,7 +3,7 @@
 #include "../../Utilities/tm4c123gh6pm.h"
 #include "../../Utilities/bitManipulation.h" //startup_TM4C123.s
 /////////////UART_INITIALIZATION(ENTER UART PIN NUMBER FROM 0 TO 7)////
-void UART_Init(char num , unsigned long  baudrate , unsigned long clock);
+void UART_Init(char num , unsigned long  baudrate );
 
 
 /////////////UARTCHAR_TRANSMIT(ENTER UART PIN NUMBER FROM 0 TO 7)/////
