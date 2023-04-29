@@ -216,11 +216,11 @@ void GPIO_SetPinValue(uint8_t port, uint8_t pin, uint8_t value )
 	switch(port)
 	 {
 		 case 'A':
-			if ( value == 'S' ) //
+			if ( value == 'S' ) // set
 			{
 				SET_BIT(GPIO_PORTA_DATA_R,pin); // pin is set
 			}
-			else if ( value == 'C' ) //
+			else if ( value == 'C' ) //clear
 			{
 				CLEAR_BIT(GPIO_PORTA_DATA_R,pin); // pin is cleared
 			}
