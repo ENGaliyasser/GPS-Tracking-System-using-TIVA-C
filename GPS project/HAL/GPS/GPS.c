@@ -1,12 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+
 #include "GPS.h"
-#include "UART.h"
-#include <math.h>
 int main(){}
 
 	//###### HOW TO BE CALLED ######
-	// CALL readGPSDouble AND GIVE IT TWO POINTERS TO SAVE INTHESE LOCATIONS THE FLOAT VALUE OF THE TWO LAT AND LOG
+	// CALL readGPSDouble AND GIVE IT TWO POINTERS TO SAVE IN THESE LOCATIONS THE FLOAT VALUE OF THE TWO LAT AND LOG
 	// CALL CALC DISTANCE AFTER  making sure that the given log and lat are suitable
 	
 	
