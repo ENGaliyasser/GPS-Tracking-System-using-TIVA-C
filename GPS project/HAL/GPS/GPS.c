@@ -1,6 +1,8 @@
 
 #include "GPS.h"
-int main(){}
+const double EARTHRADIUS = 6371000;
+const double PI=3.14159265358979323846;
+//int main(){}
 
 	//###### HOW TO BE CALLED ######
 	// CALL readGPSDouble AND GIVE IT TWO POINTERS TO SAVE IN THESE LOCATIONS THE FLOAT VALUE OF THE TWO LAT AND LOG
@@ -66,7 +68,7 @@ int main(){}
                        if(c == ',')
                        UART_StringRX(0 , log , ',');
                  //================================
-											 return 0
+											 return 0;
 
                                    }
                                 }
@@ -86,38 +88,38 @@ int main(){}
 
 //char chara[11] = "6094.20986"; //el values de tosta3ml fel 7esabat bs , 3shan law awel rakam 0 msh haib2a lih e3tbar
 
-double floatVal(char *c , int latOrlog){
-    int number , i = 0;
-    int j=3 ; // if latOrlog = 0 ---> lat and so 10 power 3 is the highest power , if latOrlog = 1 --> log and so 10 power 4 is the highest power
+//double floatVal(char *c , int latOrlog){
+//    int number , i = 0;
+//    int j=3 ; // if latOrlog = 0 ---> lat and so 10 power 3 is the highest power , if latOrlog = 1 --> log and so 10 power 4 is the highest power
 
-    if (latOrlog == 1) j = 4;
+//    if (latOrlog == 1) j = 4;
 
-    double valueOflog_lat = 0.0f; //value of latitude or longitude in numbers
-
-
-    while( j > -6){
-
-    if(c[i] == '.')
-       {
-           i++;
-           continue;
-       }
-
-    number = c[i] - 48;
+//    double valueOflog_lat = 0.0f; //value of latitude or longitude in numbers
 
 
-    valueOflog_lat += number*(pow(10 , j));
+//    while( j > -6){
+
+//    if(c[i] == '.')
+//       {
+//           i++;
+//           continue;
+//       }
+
+//    number = c[i] - 48;
 
 
-    j--;
+//    valueOflog_lat += number*(pow(10 , j));
 
-    i++;
 
-    }
+//    j--;
 
-    return valueOflog_lat;
+//    i++;
 
-}
+//    }
+
+//    return valueOflog_lat;
+
+//}
 
 //===========================================================================================================
 //floatVal V2
@@ -136,7 +138,8 @@ double floatVal(char *c){
     return result;
 }
 //===========================================================================================================
-double degToRad(double deg) return deg* (M_PI/180);
+
+double degToRad(double deg) { return deg* ( PI /180);}
 
 double convertCoords(char * old){
 	double x;
@@ -149,9 +152,8 @@ double convertCoords(char * old){
 
 
 //calcDistance is a function for calculating distance between two points using latitudes and longitudes
-
 double calcDistance(volatile double latitude_1, volatile double logitude_1, volatile double latitude_2, volatile double logitude_2){
-volatile double phi1, phi2, delta_phi, delta lmbda, a, b, c, d;
+volatile double phi1, phi2, delta_phi, delta_lmbda, a, b, c, d;
 	phi1 = degToRad(latitude_1);
 	phi2 = degToRad(latitude_2);
   delta_phi = phi2-phi1;
@@ -162,7 +164,7 @@ volatile double phi1, phi2, delta_phi, delta lmbda, a, b, c, d;
        (cos(phi1) * cos(phi2)) *
        (sin(delta_lmbda/2) * sin(delta_lmbda/2)) ;
    c = 2 * atan2(sqrt(a),sqrt(1-a));
-   d = EARTH_RADIUS * c;
+   d = EARTHRADIUS * c;
 	return d;
 	
 

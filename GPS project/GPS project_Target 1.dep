@@ -1,10 +1,39 @@
 Dependencies for Project 'GPS project', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Utilities\startup_TM4C123.s)(0x64394CFF)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup_tm4c123.lst --xref -o .\startup_tm4c123.o --depend .\startup_tm4c123.d)
-F (.\Utilities\tm4c123gh6pm.h)(0x5388525A)()
-F (.\Utilities\bitManipulation.h)(0x64394D99)()
-F (.\MCAL\GPIO\GPIO.h)(0x64394D85)()
-F (.\MCAL\GPIO\GPIO.c)(0x64395B5D)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork -I.\Utilities -I.\MCAL\GPIO-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\gpio.o --omf_browse .\gpio.crf --depend .\gpio.d)
-I (MCAL\GPIO\GPIO.h)(0x64394D85)
-I (MCAL\GPIO\../../Utilities/tm4c123gh6pm.h)(0x5388525A)
-I (MCAL\GPIO\../../Utilities/bitManipulation.h)(0x64394D99)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+F (.\Utilities\startup_TM4C123.s)(0x6457AD6C)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup_tm4c123.lst --xref -o .\startup_tm4c123.o --depend .\startup_tm4c123.d)
+F (.\Utilities\tm4c123gh6pm.h)(0x5388606A)()
+F (.\Utilities\bitManipulation.h)(0x64395BA9)()
+F (.\MCAL\GPIO\GPIO.h)(0x6457AD6C)()
+F (.\MCAL\GPIO\GPIO.c)(0x6457B357)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork -I.\Utilities -I.\MCAL\GPIO-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\gpio.o --omf_browse .\gpio.crf --depend .\gpio.d)
+I (MCAL\GPIO\GPIO.h)(0x6457AD6C)
+I (.\Utilities\bitManipulation.h)(0x64395BA9)
+I (.\Utilities\tm4c123gh6pm.h)(0x5388606A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+F (.\MCAL\UART\UART.c)(0x6457B373)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork -I.\Utilities -I.\MCAL\GPIO-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (MCAL\UART\UART.h)(0x643D275A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (MCAL\UART\../../Utilities/tm4c123gh6pm.h)(0x5388606A)
+I (MCAL\UART\../../Utilities/bitManipulation.h)(0x64395BA9)
+F (.\MCAL\UART\UART.h)(0x643D275A)()
+F (.\HAL\GPS\GPS.h)(0x6457B183)()
+F (.\HAL\GPS\GPS.c)(0x6457B314)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork -I.\Utilities -I.\MCAL\GPIO-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\gps.o --omf_browse .\gps.crf --depend .\gps.d)
+I (HAL\GPS\GPS.h)(0x6457B183)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C819B4)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
+I (HAL\GPS\../../MCAL/UART/UART.h)(0x643D275A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (HAL\GPS\../../MCAL/UART/../../Utilities/tm4c123gh6pm.h)(0x5388606A)
+I (HAL\GPS\../../MCAL/UART/../../Utilities/bitManipulation.h)(0x64395BA9)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C819B4)
+F (.\Application\APP.c)(0x6457B438)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork -I.\Utilities -I.\MCAL\GPIO-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\app.o --omf_browse .\app.crf --depend .\app.d)
+I (Application\APP.h)(0x6457B183)
+I (.\MCAL\GPIO\../../Utilities/bitManipulation.h)(0x64395BA9)
+I (.\MCAL\GPIO\../../Utilities/tm4c123gh6pm.h)(0x5388606A)
+I (.\MCAL\GPIO\../../MCAL/GPIO/GPIO.h)(0x6457AD6C)
+I (.\MCAL\GPIO\../../MCAL/UART/UART.h)(0x643D275A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (.\MCAL\GPIO\../../HAL/GPS/GPS.h)(0x6457B183)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C819B4)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
+I (.\MCAL\GPIO\../../HAL/GPS/../../MCAL/UART/UART.h)(0x643D275A)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C819B4)
+F (.\Application\APP.h)(0x6457B183)()

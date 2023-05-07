@@ -1,7 +1,6 @@
 #include "GPIO.h"
 
 
-void SystemInit(){}
 	
 void GPIO_InitPort(uint8_t port)
 {

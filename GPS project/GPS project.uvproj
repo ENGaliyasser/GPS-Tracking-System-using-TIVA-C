@@ -144,7 +144,7 @@
             <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>0</TargetSelection>
+          <TargetSelection>2</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -158,7 +158,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\UL2CM3.DLL</Driver>
+            <Driver>BIN\lmidk-agdi.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -435,13 +435,47 @@
               <FileType>1</FileType>
               <FilePath>.\MCAL\GPIO\GPIO.c</FilePath>
             </File>
+            <File>
+              <FileName>UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MCAL\UART\UART.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MCAL\UART\UART.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>HAL</GroupName>
+          <Files>
+            <File>
+              <FileName>GPS.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HAL\GPS\GPS.h</FilePath>
+            </File>
+            <File>
+              <FileName>GPS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HAL\GPS\GPS.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Application</GroupName>
+          <Files>
+            <File>
+              <FileName>APP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Application\APP.c</FilePath>
+            </File>
+            <File>
+              <FileName>APP.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Application\APP.h</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

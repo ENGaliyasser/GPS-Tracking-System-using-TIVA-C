@@ -1,9 +1,6 @@
 #include "UART.h"
-#define TXFULL 0x00000020
-#define RXEMPTY 0x00000010
-#define clock 16000000
-void SystemInit(){}
-int main(){}
+
+//int main(){}
 ////////// UARTINITIALIZATION ///////
 void UART_Init(char num , unsigned long  baudrate ){
 	unsigned long uartIBRD, uartFBRD;
@@ -12,7 +9,7 @@ void UART_Init(char num , unsigned long  baudrate ){
 	uartIBRD = (int)(CLDIV);
 	uartFBRD = (int)((CLDIV - uartIBRD) * 64 + 0.5);
 	switch( num ){
-		  case '0':
+			 case '0':
             SET_BIT(SYSCTL_RCGCUART_R,0);
 	          SET_BIT(SYSCTL_RCGCGPIO_R,0);
 	          while((SYSCTL_PRGPIO_R & 0x01) == 0){}
@@ -50,11 +47,11 @@ void UART_Init(char num , unsigned long  baudrate ){
 	          UART2_LCRH_R |= 0x70;
 	          UART2_CTL_R |= 0x301;
 	          GPIO_PORTD_DEN_R |= 0xC0;
-		  GPIO_PORTD_AMSEL_R &= ~0xC0;
+						GPIO_PORTD_AMSEL_R &= ~0xC0;
 	          GPIO_PORTD_AFSEL_R |= 0xC0;
 	          GPIO_PORTD_PCTL_R |= 0x11000000;
             break;
-        case '3':
+       case '3':
             SET_BIT(SYSCTL_RCGCUART_R,3);
 	          SET_BIT(SYSCTL_RCGCGPIO_R,2);
 	          while((SYSCTL_PRGPIO_R & (0x01<<2)) == 0) {}
@@ -64,11 +61,11 @@ void UART_Init(char num , unsigned long  baudrate ){
 	          UART3_LCRH_R |= 0x70;
 	          UART3_CTL_R |= 0x301;
 	          GPIO_PORTC_DEN_R |= 0xC0;
-		  GPIO_PORTC_AMSEL_R &= ~0xC0;
+						GPIO_PORTC_AMSEL_R &= ~0xC0;
 	          GPIO_PORTC_AFSEL_R |= 0xC0;
 	          GPIO_PORTC_PCTL_R |= 0x11000000;
             break;
-        case '4':
+       case '4':
             SET_BIT(SYSCTL_RCGCUART_R,4);
 	          SET_BIT(SYSCTL_RCGCGPIO_R,2);
 	          while((SYSCTL_PRGPIO_R & (0x01<<2)) == 0) {}
@@ -78,11 +75,11 @@ void UART_Init(char num , unsigned long  baudrate ){
 	          UART4_LCRH_R |= 0x70;
 	          UART4_CTL_R |= 0x301;
 	          GPIO_PORTC_DEN_R |= 0x30;
-		  GPIO_PORTC_AMSEL_R &= ~0x30;
+						GPIO_PORTC_AMSEL_R &= ~0x30;
 	          GPIO_PORTC_AFSEL_R |= 0x30;
 	          GPIO_PORTC_PCTL_R |= 0x00110000;
             break;
-        case '5':
+       case '5':
             SET_BIT(SYSCTL_RCGCUART_R,5);
 	          SET_BIT(SYSCTL_RCGCGPIO_R,4);
 	          while((SYSCTL_PRGPIO_R & (0x01<<4)) == 0) {}
@@ -92,12 +89,12 @@ void UART_Init(char num , unsigned long  baudrate ){
 	          UART5_LCRH_R |= 0x70;
 	          UART5_CTL_R |= 0x301;
 	          GPIO_PORTE_DEN_R |= 0x30;
-		  GPIO_PORTE_AMSEL_R &= ~0x30;
+						GPIO_PORTE_AMSEL_R &= ~0x30;
 	          GPIO_PORTE_AFSEL_R |= 0x30;
 	          GPIO_PORTE_PCTL_R |= 0x00110000;
             break;
-	 case '6':
-                  SET_BIT(SYSCTL_RCGCUART_R,6);
+			case '6':
+            SET_BIT(SYSCTL_RCGCUART_R,6);
 	          SET_BIT(SYSCTL_RCGCGPIO_R,3);
 	          while((SYSCTL_PRGPIO_R & (0x01<<3)) == 0) {}
 	          CLEAR_BIT(UART6_CTL_R,0);
@@ -106,12 +103,12 @@ void UART_Init(char num , unsigned long  baudrate ){
 	          UART6_LCRH_R |= 0x70;
 	          UART6_CTL_R |= 0x301;
 	          GPIO_PORTD_DEN_R |= 0x30;
-		  GPIO_PORTD_AMSEL_R &= ~0x30;
+						GPIO_PORTD_AMSEL_R &= ~0x30;
 	          GPIO_PORTD_AFSEL_R |= 0x30;
 	          GPIO_PORTD_PCTL_R |= 0x00110000;
-             break;
+            break;
 	  case '7':
-                  SET_BIT(SYSCTL_RCGCUART_R,7);
+            SET_BIT(SYSCTL_RCGCUART_R,7);
 	          SET_BIT(SYSCTL_RCGCGPIO_R,4);
 	          while((SYSCTL_PRGPIO_R & (0x01<<4)) == 0) {}
 	          CLEAR_BIT(UART7_CTL_R,0);
@@ -120,20 +117,20 @@ void UART_Init(char num , unsigned long  baudrate ){
 	          UART7_LCRH_R |= 0x70;
 	          UART7_CTL_R |= 0x301;
 	          GPIO_PORTE_DEN_R |= 0x03;
-		  GPIO_PORTE_AMSEL_R &= ~0x03;
+						GPIO_PORTE_AMSEL_R &= ~0x03;
 	          GPIO_PORTE_AFSEL_R |= 0x03;
 	          GPIO_PORTE_PCTL_R |= 0x00000011;
-             break;
+            break;
 	default:
              break;
        
     }
 	}
 /////////////////TRANSMIT CHAR///////////////
-      void UART_CharTX(char num , unsigned char ch){
+void UART_CharTX(char num , unsigned char ch){
 				
 				
-          switch(num){
+    switch(num){
 				 case '0': 
             
 	               while((UART0_FR_R&TXFULL) != 0){}
@@ -182,8 +179,8 @@ void UART_Init(char num , unsigned long  baudrate ){
 }
 			 }
 			//////////// RECEIVE CHAR /////////
-	 unsigned char UART_CharRX(char num ){
-            switch(num){
+unsigned char UART_CharRX(char num ){
+    switch(num){
 				 case '0':				 
 	                while((UART0_FR_R&RXEMPTY) != 0){}
 	                return UART0_DR_R&0xFF;
@@ -218,6 +215,7 @@ void UART_Init(char num , unsigned long  baudrate ){
 	                return UART7_DR_R&0xFF;
 		     break;
 	       default:
+					 return 0;
                      break;
 	
 }
