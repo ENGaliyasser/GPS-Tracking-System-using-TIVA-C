@@ -4,78 +4,16 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 F:\GIT\GPS-Tracking-System-using-TIVA-C\GPS project\GPS project.uvproj
-Project File Date:  04/17/2023
+Project File Date:  05/07/2023
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling APP.c...
-Application\APP.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-Application\APP.c(16): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4528 RO-data=636 RW-data=0 ZI-data=608  
+".\GPS project.axf" - 0 Error(s), 0 Warning(s).
+\APP.c(17): warning:  #1-D: last line of file ends without a newline
   }
 Application\APP.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=4520 RO-data=636 RW-data=0 ZI-data=608  
+Program Size: Code=4528 RO-data=636 RW-data=0 ZI-data=608  
 ".\GPS project.axf" - 0 Error(s), 2 Warning(s).
-Load "F:\\GIT\\GPS-Tracking-System-using-TIVA-C\\GPS project\\GPS project.axf" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Connection failed!, error code=&d
-Error: Flash Download failed  -  Target DLL has been cancelled
-</pre>
-</body>
-</html>
-\UART.c(212): warning:  #111-D: statement is unreachable
-                     break;
-MCAL\UART\UART.c(216): warning:  #111-D: statement is unreachable
-                     break;
-MCAL\UART\UART.c(219): warning:  #111-D: statement is unreachable
-                       break;
-MCAL\UART\UART.c: 9 warnings, 0 errors
-linking...
-Program Size: Code=4520 RO-data=636 RW-data=0 ZI-data=608  
-".\GPS project.axf" - 0 Error(s), 9 Warning(s).
-ART\UART.c(212): warning:  #111-D: statement is unreachable
-                     break;
-MCAL\UART\UART.c(216): warning:  #111-D: statement is unreachable
-                     break;
-MCAL\UART\UART.c(219): warning:  #111-D: statement is unreachable
-                       break;
-MCAL\UART\UART.c: 9 warnings, 0 errors
-linking...
-.\GPS project.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by app.o and uart.o).
-.\GPS project.axf: Error: L6200E: Symbol main multiply defined (by app.o and uart.o).
-Not enough information to list image symbols.
-Not enough information to list the image map.
-Finished: 2 information, 0 warning and 2 error messages.
-".\GPS project.axf" - 2 Error(s), 14 Warning(s).
-Target not created
-   double valueOflog_lat = 0.0f; //value of latitude or longitude in numbers
-HAL\GPS\GPS.c(125): error:  #247: function "floatVal" has already been defined
-  double floatVal(char *c){
-HAL\GPS\GPS.c(139): error:  #130: expected a "{"
-  double degToRad(double deg) return deg* (M_PI/180);
-HAL\GPS\GPS.c(143): error:  #20: identifier "old" is undefined
-        x = floatVal(old);
-HAL\GPS\GPS.c(143): error:  #165: too few arguments in function call
-        x = floatVal(old);
-HAL\GPS\GPS.c(154): error:  #65: expected a ";"
-  volatile double phi1, phi2, delta_phi, delta lmbda, a, b, c, d;
-HAL\GPS\GPS.c(158): error:  #20: identifier "delta_lmbda" is undefined
-    delta_lmbda = logitude_2-logitude_1;
-HAL\GPS\GPS.c(161): error:  #20: identifier "a" is undefined
-     a = (sin(delta_phi/2) * sin(delta_phi/2)) + 
-HAL\GPS\GPS.c(164): error:  #20: identifier "c" is undefined
-     c = 2 * atan2(sqrt(a),sqrt(1-a));
-HAL\GPS\GPS.c(165): error:  #20: identifier "d" is undefined
-     d = EARTH_RADIUS * c;
-HAL\GPS\GPS.c(165): error:  #20: identifier "EARTH_RADIUS" is undefined
-     d = EARTH_RADIUS * c;
-HAL\GPS\GPS.c: 0 warnings, 13 errors
-compiling APP.c...
-Application\APP.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-Application\APP.c(16): warning:  #1-D: last line of file ends without a newline
-  }
-Application\APP.c: 2 warnings, 0 errors
-".\GPS project.axf" - 13 Error(s), 16 Warning(s).
-Target not created
