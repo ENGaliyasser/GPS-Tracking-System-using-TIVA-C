@@ -3,14 +3,84 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-E:\junior 2nd semester\embedded systems\FINAL GUTHUB SUBMIT\GPS-Tracking-System-using-TIVA-C\GPS project final delivery\GPS project.uvproj
+E:\junior 2nd semester\embedded systems\Test\GPS-Tracking-System-using-TIVA-C\GPS project final delivery\GPS project.uvproj
 Project File Date:  05/13/2023
 
 <h2>Output:</h2>
 Build target 'Target 1'
+compiling GPS.c...
+HAL\GPS\../../MCAL/UART/UART.h(12): warning:  #1295-D: Deprecated declaration UART0_CharRX - give arg types
+  unsigned char UART0_CharRX();
+HAL\GPS\../../MCAL/UART/UART.h(24): warning:  #1295-D: Deprecated declaration UART5_CharRX - give arg types
+  unsigned char UART5_CharRX();
+HAL\GPS\../../MCAL/UART/UART.h(44): warning:  #1295-D: Deprecated declaration UART2_CharRX - give arg types
+  unsigned char UART2_CharRX();
+HAL\GPS\../../MCAL/UART/UART.h(65): warning:  #1295-D: Deprecated declaration UART7_CharRX - give arg types
+  unsigned char UART7_CharRX();
+HAL\GPS\GPS.c(108): warning:  #940-D: missing return statement at end of non-void function "readGPS"
+         }
+HAL\GPS\GPS.c(21): warning:  #550-D: variable "result" was set but never used
+  int i=0,j=0,result=1;
+HAL\GPS\GPS.c: 6 warnings, 0 errors
 linking...
 Program Size: Code=11460 RO-data=1084 RW-data=0 ZI-data=608  
-".\GPS project.axf" - 0 Error(s), 0 Warning(s).
+".\GPS project.axf" - 0 Error(s), 6 Warning(s).
+Load "E:\\junior 2nd semester\\embedded systems\\Test\\GPS-Tracking-System-using-TIVA-C\\GPS project final delivery\\GPS project.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
 </pre>
 </body>
 </html>
+" was set but never used
+        unsigned long uartIBRD, uartFBRD,dumyDelay;
+MCAL\UART\UART.c(108): warning:  #177-D: variable "dumyDelay" was declared but never referenced
+        unsigned long uartIBRD, uartFBRD,dumyDelay;
+MCAL\UART\UART.c(159): warning:  #177-D: variable "dumyDelay" was declared but never referenced
+        unsigned long uartIBRD, uartFBRD,dumyDelay;
+MCAL\UART\UART.c: 8 warnings, 0 errors
+compiling GPS.c...
+HAL\GPS\../../MCAL/UART/UART.h(12): warning:  #1295-D: Deprecated declaration UART0_CharRX - give arg types
+  unsigned char UART0_CharRX();
+HAL\GPS\../../MCAL/UART/UART.h(24): warning:  #1295-D: Deprecated declaration UART5_CharRX - give arg types
+  unsigned char UART5_CharRX();
+HAL\GPS\../../MCAL/UART/UART.h(44): warning:  #1295-D: Deprecated declaration UART2_CharRX - give arg types
+  unsigned char UART2_CharRX();
+HAL\GPS\../../MCAL/UART/UART.h(65): warning:  #1295-D: Deprecated declaration UART7_CharRX - give arg types
+  unsigned char UART7_CharRX();
+HAL\GPS\GPS.c(108): warning:  #940-D: missing return statement at end of non-void function "readGPS"
+         }
+HAL\GPS\GPS.c(21): warning:  #550-D: variable "result" was set but never used
+  int i=0,j=0,result=1;
+HAL\GPS\GPS.c: 6 warnings, 0 errors
+compiling LED.C...
+HAL\LED\LED.h(11): warning:  #1295-D: Deprecated declaration LED_init - give arg types
+  void LED_init();
+HAL\LED\LED.C: 1 warning, 0 errors
+compiling Systick.c...
+compiling APP.c...
+.\MCAL\GPIO\../../MCAL/UART/UART.h(12): warning:  #1295-D: Deprecated declaration UART0_CharRX - give arg types
+  unsigned char UART0_CharRX();
+.\MCAL\GPIO\../../MCAL/UART/UART.h(24): warning:  #1295-D: Deprecated declaration UART5_CharRX - give arg types
+  unsigned char UART5_CharRX();
+.\MCAL\GPIO\../../MCAL/UART/UART.h(44): warning:  #1295-D: Deprecated declaration UART2_CharRX - give arg types
+  unsigned char UART2_CharRX();
+.\MCAL\GPIO\../../MCAL/UART/UART.h(65): warning:  #1295-D: Deprecated declaration UART7_CharRX - give arg types
+  unsigned char UART7_CharRX();
+.\MCAL\GPIO\../../HAL/GPS/../../MCAL/UART/UART.h(12): warning:  #1295-D: Deprecated declaration UART0_CharRX - give arg types
+  unsigned char UART0_CharRX();
+.\MCAL\GPIO\../../HAL/GPS/../../MCAL/UART/UART.h(24): warning:  #1295-D: Deprecated declaration UART5_CharRX - give arg types
+  unsigned char UART5_CharRX();
+.\MCAL\GPIO\../../HAL/GPS/../../MCAL/UART/UART.h(44): warning:  #1295-D: Deprecated declaration UART2_CharRX - give arg types
+  unsigned char UART2_CharRX();
+.\MCAL\GPIO\../../HAL/GPS/../../MCAL/UART/UART.h(65): warning:  #1295-D: Deprecated declaration UART7_CharRX - give arg types
+  unsigned char UART7_CharRX();
+.\MCAL\GPIO\../../HAL/LED/LED.h(11): warning:  #1295-D: Deprecated declaration LED_init - give arg types
+  void LED_init();
+Application\APP.c(7): warning:  #177-D: variable "k" was declared but never referenced
+  char k;
+Application\APP.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=11460 RO-data=1084 RW-data=0 ZI-data=608  
+".\GPS project.axf" - 0 Error(s), 30 Warning(s).
