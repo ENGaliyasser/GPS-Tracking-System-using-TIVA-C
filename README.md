@@ -1,8 +1,17 @@
 # Introduction To Embedded Systems(CSE211s) project - GPS Tracking System using TIVA C - ARM Cortex M processor
+* For More details [check the report](https://github.com/ENGaliyasser/GPS-Tracking-System-using-TIVA-C/blob/main/GPS%20report.pdf)
+* Video of the Project [link](https://drive.google.com/drive/folders/1iVHXKPgMS_PXqJvjQfF0XGWhyf_Pinwc)
 </br>
-This project is Done by Group 28 Of CSE and ECE departements at Faculty of Engineering Ain Shams Univeristy. </br></br>
 
-Members Contributions: </br>
+## The project is implemented using the following hardware:
+* Tiva-c
+* NEO6 GPS Module  
+* LCD
+
+</br>
+
+## This project is Done by Group 28 Of CSE and ECE departements at Faculty of Engineering Ain Shams Univeristy. </br>
+## Members: </br>
 Ali Yasser Ali Abdallah 2000311 </br>
 Kareem Khaled Abdelazim Mohamed 2001091 </br>
 Ahmed Hossam eldin Mohamed Ahmed Mobark 2000075 </br>
