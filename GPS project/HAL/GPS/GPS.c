@@ -1,4 +1,3 @@
-
 #include "GPS.h"
 const double EARTHRADIUS = 6371000;
 const double PI=3.14159265358979323846;
