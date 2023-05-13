@@ -1,0 +1,13 @@
+.\eeprom.o: Application\driverlib\eeprom.c
+.\eeprom.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\eeprom.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\eeprom.o: Application\driverlib\inc/hw_eeprom.h
+.\eeprom.o: Application\driverlib\inc/hw_flash.h
+.\eeprom.o: Application\driverlib\inc/hw_ints.h
+.\eeprom.o: Application\driverlib\inc/hw_sysctl.h
+.\eeprom.o: Application\driverlib\inc/hw_types.h
+.\eeprom.o: Application\driverlib\debug.h
+.\eeprom.o: Application\driverlib\flash.h
+.\eeprom.o: Application\driverlib\interrupt.h
+.\eeprom.o: Application\driverlib\sysctl.h
+.\eeprom.o: Application\driverlib\eeprom.h
